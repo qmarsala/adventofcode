@@ -3,17 +3,44 @@ name: Go Test
 on: [push]
 
 jobs:
-  build:
+  run_2018:
     runs-on: ubuntu-latest
-
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: run 2018
+        run: cd 2018
+      - name: go mod tidy
+        run: go mod tidy
+      - name: go test
+        run: go test ./...
+  run_2024:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
           go-version: '1.23.x'
-      - name: 2024
+      - name: run 2024
         run: cd 2024
+      - name: go mod tidy
+        run: go mod tidy
+      - name: go test
+        run: go test ./...
+  run_2025:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.x'
+      - name: run 2025
+        run: cd 2025
       - name: go mod tidy
         run: go mod tidy
       - name: go test
