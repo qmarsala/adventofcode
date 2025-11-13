@@ -19,6 +19,11 @@ func Test_ReadFrequencies(t *testing.T) {
 			inputs:         []string{"+1", "+1", "+1"},
 			expectedResult: 3,
 		},
+		{
+			name:           "+1 +1 -2 = 0",
+			inputs:         []string{"+1", "+1", "-2"},
+			expectedResult: 0,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
