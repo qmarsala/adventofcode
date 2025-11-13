@@ -1,7 +1,7 @@
 package day07
 
 import (
-	"advent2024/fileio"
+	"2024/fileio"
 	"fmt"
 	"slices"
 	"strconv"

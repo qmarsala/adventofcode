@@ -1,7 +1,7 @@
 package day06
 
 import (
-	"advent2024/fileio"
+	"2024/fileio"
 	"fmt"
 	"strings"
 )

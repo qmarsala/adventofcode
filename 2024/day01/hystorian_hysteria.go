@@ -1,8 +1,8 @@
 package day01
 
 import (
-	"advent2024/fileio"
-	"advent2024/math"
+	"2024/fileio"
+	"2024/math"
 	"fmt"
 	"slices"
 	"strconv"

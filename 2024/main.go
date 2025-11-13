@@ -1,13 +1,13 @@
 package main
 
 import (
-	"advent2024/day01"
-	"advent2024/day02"
-	"advent2024/day03"
-	"advent2024/day04"
-	"advent2024/day05"
-	"advent2024/day06"
-	"advent2024/day07"
+	"2024/day01"
+	"2024/day02"
+	"2024/day03"
+	"2024/day04"
+	"2024/day05"
+	"2024/day06"
+	"2024/day07"
 	"fmt"
 	"time"
 )

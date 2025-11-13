@@ -1,7 +1,7 @@
 package day02_test
 
 import (
-	"advent2024/day02"
+	"2024/day02"
 	"testing"
 )
 
